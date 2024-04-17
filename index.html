@@ -2,10 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>응용</title>
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img src="./imgs/logo.png" alt="">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Solar System</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cumque, quam saepe illum ullam temporibus officiis excepturi expedita eligendi sunt culpa totam id alias. Aut at nesciunt incidunt quos saepe.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imgs/수성.png" alt="img1" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <!-- onclick="imgSlider('./imgs/img1.png'); changeCircleColor('#017143')" -->
+            <li><img src="./imgs/수성.png" alt="" onclick="imgSlider('./imgs/수성.png'); changeCirclecolor('#017143')"></li>
+            <li><img src="./imgs/금성.png" alt="" onclick="imgSlider('./imgs/금성.png'); changeCirclecolor('#d752b1')"></li>
+            <li><img src="./imgs/지구.png" alt="" onclick="imgSlider('./imgs/지구.png'); changeCirclecolor('#eb7495')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./imgs/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything
+        }
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
     
 </body>
 </html>
