@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body .imga{
+    height: 100vh;
+    background: url(./imgs/은하수.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: -100vh;
 }
 section{
     position: relative;
@@ -10,7 +18,6 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
 }
 header{
     position: absolute;
@@ -35,7 +42,7 @@ header ul li{
 }
 header ul li a{
     display: inline;
-    color: #333;
+    color: #fff;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
@@ -47,13 +54,15 @@ header ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 50px;
 }
 .content .textBox{
     position: relative;
     max-width: 600px;
+    color: #fff;
 }
 .content .textBox h2{
-    color: #333;
+    color: #fff;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
@@ -109,7 +118,6 @@ header ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-            
 }
 .sci li{
     text-align: center;
