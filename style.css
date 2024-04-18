@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 body .imga{
@@ -76,7 +75,7 @@ header ul li a{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background-color: #017143;
+    background-color: indianred;
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -84,10 +83,12 @@ header ul li a{
     text-decoration: none;
 }
 .content .imgBox{
+    filter: drop-shadow(5px 5px 5px);
     background-size : contain;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-right: 80px;
 }
 .thumb {
     position: absolute;
@@ -125,8 +126,7 @@ header ul li a{
     list-style: none;
     border-radius: 10px;
     background-color: #000;
-    
-    
+        
 }
 .sci li a{
     display: inline-block;
@@ -135,7 +135,6 @@ header ul li a{
     filter: invert(1);
     
 }
-
 
 /* .circle{
     position: absolute;
